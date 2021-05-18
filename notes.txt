@@ -1,0 +1,80 @@
+SQL queries
+Add data
+Read data
+Update data
+Delete data 
+
+Efficient queries to retrieve information 
+
+Design schema (structure) of the database
+
+Understand when to use advanced features
+
+Managing database in production environment
+	
+	Backups 
+
+	Scaling database to serve more users
+
+Database Design
+
+How to store a list of large cities in database
+
+Database Design Process
+
+	What kind of thing are we storing? 
+
+	What properties does this thing have? 
+
+	What type of data does each of those properties contain? 
+	
+What kind of thing are we storing? 
+	List of cities 
+
+What properties does this thing have? 
+	Each city has a name, country, population, area 
+
+What type of data does each of those properties contain? 
+	string, number	
+
+Create a *table* called 'cities'
+	
+Table: collection of records that have some kind of related meaning 
+
+Properites become the columns: name, country, population
+
+Table: cities
+name | country | population | area 
+
+Then can add data 
+
+Each row represents one city
+
+SQL
+
+keyword       identifier
+CREATE TABLE cities
+
+CREATE TABLE cities (
+	name VARCHAR(50),
+	country VARCHAR(50),
+	population INTEGER,
+	area INTEGER
+);
+
+VARCHAR "varchar" - string of max 50 characters
+
+INTEGER - numbers range from -2 billion to +2 billion
+
+How to insert a row of data in SQL
+INSERT INTO cities (name, country, population, area) 
+
+VALUES ('Tokyo', 'Japan', 38505000, 8223);
+
+// insert multiple rows into a table using a SQL query
+VALUES
+  ('Delhi', 'India', 281125000, 2240),
+  ('Shanghai', 'China', 22125000, 4015(,
+  ('Sao Palo', 'Brazil', 20935000m 3043);
+
+
